@@ -5,6 +5,7 @@ import Index from './views/Index.vue'
 import About from './views/About.vue'
 import Login from './views/Login.vue'
 import Register from './views/Register.vue'
+import test from './views/test.vue'
 
 Vue.use(Router)
 
@@ -47,6 +48,14 @@ export default new Router({
       component: Register,
       meta: {
         title: '注册页'
+      }
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test,
+      meta: {
+        title: 'test'
       }
     }
   ]
